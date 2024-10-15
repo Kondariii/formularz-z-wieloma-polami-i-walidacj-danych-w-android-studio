@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Imię i nazwisko nie mogą być puste", Toast.LENGTH_SHORT).show();
             } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 Toast.makeText(this, "Nieprawidłowy adres email", Toast.LENGTH_SHORT).show();
-            } else if (phoneNumber.length() <= 9) {
+            } else if (phoneNumber.length() != 9) {
                 Toast.makeText(this, "Numer telefonu musi mieć 9 cyfr", Toast.LENGTH_SHORT).show();
             } else if (password.length() < 6) {
                 Toast.makeText(this, "Hasło musi mieć co najmniej 6 znaków", Toast.LENGTH_SHORT).show();
